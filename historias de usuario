@@ -1,0 +1,24 @@
+usuarios
+  como: usuario que quiera o esté interesado en la adopción de una mascota
+  quiero:dar al usuario la comodidad de llevar su proceso con agilidad y confianza desde la comodidad de su celular
+  para:ayudar a las fundaciones que recogen perros en adopción en bogotá
+
+fundaciones
+  como: fundación interesada en hacer parte del proyecto para la ayuda de posibles futuros amos de sus mascotas
+  quiero: la ayuda para la fundación y animales en estados de olvido
+  para: ayudar a los mascotas a buscar un hogar
+
+index
+  como: hacer una pagina principal ilustrativa y comoda visualmente para llamar la atención de los usuarios
+  quiero: que los usuarios se interesen por el proyecto
+  para: mejorar la problematica de fundaciones sin abasto para el sustento animal
+
+requisitos basicos para adopción
+  como: ver los documentos basicos pedidos a los usuarios para el proceso de adopción de las mascotas
+  quiero: que la documentancion sea clave y consiza para validar que las mascotas esaran en un buen hogar
+  para: asegurar que las mascotas tengan una vida digna
+
+requisitos basicos para fundación
+  como: que la fundación este al dia en papeleo obligatorio
+  quiero: la fundación sea constituida ante el gobierno
+  para: tratar con empresas constituidas para evitar problemas legales
