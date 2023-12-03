@@ -1,0 +1,34 @@
+ <!-- Fragmento Head -->
+ <div th:replace="fragments/head"></div>
+ <!-- Fragmento Head --> 
+<body>
+
+    <header class="hero">
+         <!-- Fragmento Nav -->
+         <div th:replace="fragments/headerNav"></div>
+         <!-- Fragmento Nav -->
+
+        <section class="hero__container container">
+            <div class="title">
+                <h1>Nuestros valores</h1>
+               
+               </div>
+            <p class="hero__paragraph">Somos un equipo dedicado a salvar animales los cuales no cuentan con un hogar
+                se encuentran en peligro o no son amados, Nuestro objetivo es encontrarles un hogar en el cual sean amados
+                y protegidos, jamas sean abandonados
+            </p>
+            <a href="#" class="cta">¡Adopta ahora!</a>
+        </section>
+    </header>
+
+    <main>
+        <div th:replace="fragments/footer"></div>
+        
+        <script src="./js/slider.js"></script>
+        <script src="./js/questions.js"></script>
+        <script src="./js/menu.js"></script>
+    </main>
+    
+</body>
+
+</html>

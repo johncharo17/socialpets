@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th=http://www.thymeleaf.org>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialPets</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    
+
+    
+
+    <meta name="theme-color" content="#2091F9">
+
+    <meta name="title" content="¡Salva y adopta un nuevo amigo!">
+    <meta name="description"
+        content="Estas listo para salvar a un nuevo amigo y que forme parte de tu familia? Somos SocialPets y nos encargamos de ayudar a encontrar un hogar a animales sin hogar, ¡Bienvenido!.">
+</head> 
+<body>
+    <header class="hero">
+        <!-- Fragmento Nav -->
+        <div th:replace="fragments/headerNav"></div>
+        <!-- Fragmento Nav -->
+
+        
+    
+            <div class="popup"> 
+                <form action="#" th:action="@{/register}" method="post" th:objet="${user}">
+                    <div class="form">
+                        <h2>Registrate</h2>
+                        <div class="form-element">
+                            <label for="rol">Registrarme como</label>
+    
+                            <select class="form-select" name="rol" id="rol" th:field="*{user.rol}" >
+                                <option value="SALVADOR">Persona</option>
+                                <option value="FUNDACION">Fundacion</option>
+                            </select>
+                        </div>
+                        <div class="form-element">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" th:field="*{user.nombre}" placeholder="Ingresa tu Nombre">
+                        </div>
+                        
+                        <div class="form-element">
+                            <label for="email">Email</label>
+                            <input  type="email" id="email" name="email" th:field="*{user.email}" placeholder="Ingresa tu Email">
+                        </div>
+                        <div class="form-element">
+                            <label for="password">Contraseña</label>
+                            <input  type="password" id="password" name="password"  th:field="*{user.password}" placeholder="Ingresa tu Contraseña">
+                        </div>
+                        <div class="form-element">
+                                <button>Registrate</button>
+                        </div>
+                        <div class="form-element">
+                            <a href="/login">
+                                Iniciar session
+                            </a>   
+                        </div>
+                        <div class="alert alert-danger" th:if="${error != null}">
+                            <p  th:text="${error}"></p>
+                         </div>
+                        <div class="alert alert-success" th:if="${exito != null}">
+                            <p  th:text="${exito}"></p>
+                         </div>
+                    </div>
+                    
+
+                </form>
+            </div>
+
+    </header>
+    <main>  
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Derechos reservados &copy; SocialPets team</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./bootstrap/js/bootstrap.js"></script>
+
+
+
+</body>

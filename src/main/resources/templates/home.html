@@ -1,0 +1,36 @@
+    <!-- Fragmento Head -->
+    <div th:replace="fragments/head"></div>
+    <!-- Fragmento Head --> 
+    <body>
+
+        <header class="hero">
+            <!-- Fragmento Nav -->
+            <div th:replace="fragments/headerNav"></div>
+            <!-- Fragmento Nav -->
+
+            <section class="hero__container container">
+                <div class="title">
+                    <h1>Bienvenido  
+                        <!-- <p th:if="${nombreUsuario}"> -->
+                            <!-- <strong  th:text="${nombreUsuario}"></strong> -->
+                            <strong  th:text="${datoUsuario.email}"></strong>
+                         <!-- </p> -->
+                        a SocialPets </h1>
+                </div>
+                <div class="title">
+                    <h3>A continuacion te ofreceremos una lista de nuestras opciones disponibles</h3>
+                </div>
+            </section>
+        </header>
+
+        <main>
+            <div th:replace="fragments/footer"></div>
+            
+            <script src="./js/slider.js"></script>
+            <script src="./js/questions.js"></script>
+            <script src="./js/menu.js"></script>
+        </main>
+        
+    </body>
+
+</html>
